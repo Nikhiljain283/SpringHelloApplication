@@ -13,4 +13,8 @@ public class HelloController {
 		return hello.getHello();
 	}
 	
+	@GetMapping("/hello/name")
+	public String name() {
+		return hello.getName("Nikhil");
+	}
 }
